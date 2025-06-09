@@ -1,0 +1,9 @@
+:root{
+    --font-principal: "Lexend Exa", sans-serif;
+
+    --font-size-mobile-titulo: 2.25rem;
+    --font-size-mobile-texto: .75rem;
+
+    --font-size-desktop-titulo: 3rem;
+    --font-size-desktop-texto: 1rem;
+}
