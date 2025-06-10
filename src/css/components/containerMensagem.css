@@ -1,0 +1,6 @@
+.main-container-mensagemCriada{
+    border: 1px solid var(--color-letra);
+    border-radius: 8px;
+    height: 106px;
+    width: 126px;
+}

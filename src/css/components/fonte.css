@@ -1,0 +1,12 @@
+.header-titulo{
+   font-size: var(--font-size-mobile-titulo);
+   font-family: var(--font-principal);
+   color: var(--roxo-escuro);
+}
+
+.header-texto{
+    font-size:  var(--font-size-mobile-texto);
+    font-family: var(--font-principal);
+    text-align: center;
+    color: var(--roxo-escuro);
+}

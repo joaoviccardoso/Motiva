@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.main-container-mensagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.main-container-pesquisa, .header-nav-titulo{
+    display: none;
+}

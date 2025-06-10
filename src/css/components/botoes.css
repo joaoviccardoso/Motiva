@@ -1,0 +1,11 @@
+.header-nav-btn{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: solid 2px var(--branco);
+    background-color: transparent;
+}
+
+.header-nav-descricaoBtn{
+    display: none;
+}
