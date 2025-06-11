@@ -1,4 +1,7 @@
 .header-nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -6,6 +9,18 @@
     background-color: transparent;
 }
 
+.header-nav-img{
+    width: 24px;
+    height: 24px;
+}
+
 .header-nav-descricaoBtn{
     display: none;
+}
+
+/*Btn main*/
+
+.main-btn-mensagem{
+    border: none;
+    background-color: transparent;
 }

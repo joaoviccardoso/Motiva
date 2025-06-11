@@ -1,12 +1,15 @@
 .main{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 50px;
+    justify-content: center;
+    background: var(--roxo-claro);
 }
 
 .main-container-mensagens{
+    width: 320px;
+    padding-top: 2rem;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 18px;
 }

@@ -3,4 +3,5 @@
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 3fr;
     font-family: var(--font-principal);
+    background: var(--roxo-claro);
 }
