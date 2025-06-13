@@ -24,3 +24,16 @@
     border: none;
     background-color: transparent;
 }
+
+/*btn main form*/
+
+.main-btn-categoria{
+    width: 130px;
+    height: 21px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 8px, rgba(0, 0, 0, 0.20) 0px 3px 3px;
+    border-radius: 8px;
+    background-color: var(--roxo-claro);
+    font-size: .62rem;
+    font-family: var(--font-principal);
+}

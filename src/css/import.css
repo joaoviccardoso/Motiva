@@ -4,6 +4,7 @@
 @import url(layout/celulares/flexCelularHeader.css);
 @import url(layout/celulares/flexCelular.css);
 @import url(layout/celulares/flexCelularMain.css);
+@import url(layout/celulares/gridCelular.css);
 @import url(components/botoes.css);
 @import url(components/containerMensagem.css);
 @import url(components/fonte.css);

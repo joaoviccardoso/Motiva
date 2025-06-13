@@ -1,5 +1,6 @@
 .main-container-form{
     background-color: var(--branco);
+    border-radius: 8px;
 }
 
 fieldset{
@@ -12,7 +13,8 @@ fieldset{
 
 .main-container-input-form{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    width: 100%;  
 }
 
 .main-container-ul-categoria{
@@ -23,5 +25,30 @@ fieldset{
 .main-ul-form{
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 12px;
+}
+
+.main-titulo-form{
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    margin: .8rem 0 ;
+}
+
+.main-label-form, .main-categoria-titulo{
+    font-size: .8rem;
+    font-family: var(--font-principal);
+    margin-bottom: .3rem;
+}
+
+.main-input-form{
+    height: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 8px, rgba(0, 0, 0, 0.20) 0px 3px 3px;
+    background-color: var(--roxo-claro);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#input-mensagem{
+    height: 70px;
 }
