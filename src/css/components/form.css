@@ -1,0 +1,27 @@
+.main-container-form{
+    background-color: var(--branco);
+}
+
+fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.main-container-input-form{
+    display: flex;
+    flex-direction: column;   
+}
+
+.main-container-ul-categoria{
+   display: flex;
+    flex-direction: column;
+}
+
+.main-ul-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
