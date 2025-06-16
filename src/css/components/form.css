@@ -3,6 +3,19 @@
     border-radius: 8px;
 }
 
+/*class de animação de entrada do form*/
+.form-animation-enter {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.4s ease;
+}
+
+/*class de animação de entrada do form*/
+.form-animation-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 fieldset{
     display: flex;
     align-items: center;
