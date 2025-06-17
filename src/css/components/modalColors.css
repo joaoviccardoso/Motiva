@@ -1,0 +1,40 @@
+.container-paleta-cor{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 220px;
+    height: 170px;
+    padding: .5rem;
+    background-color: var(--roxo-escuro);
+}
+
+.container-titulo-paleta-cor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-paleta-cor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.bolinha-cor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+/* Oculta elementos */
+.mostrarFundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* transparência */
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5)
+}

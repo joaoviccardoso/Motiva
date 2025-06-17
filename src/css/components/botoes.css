@@ -37,3 +37,19 @@
     font-size: .62rem;
     font-family: var(--font-principal);
 }
+
+/*btn paletas de cores*/
+
+.btn-paleta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 48px;
+    border: none;
+    background-color: var(--branco);
+    font-family: var(--font-principal);
+    font-size: var(--font-size-mobile-texto);
+    gap: 2px;
+    width: 105px;
+    height: 35px;
+}
