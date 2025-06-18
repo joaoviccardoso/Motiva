@@ -1,12 +1,10 @@
 export class PaletaView{
     constructor(container){
         this.view = document.querySelector(container);
-        this.body = document.querySelector(".mostrarFundoEscuro")
+        this.body = document.querySelector("body")
     }
 
     gerarPaleta(){
-        this.view.innerHTML = '';
-
         const containerPaleta = document.createElement("div");
         containerPaleta.classList.add("container-paleta-cor", "form-animation-enter");
         containerPaleta.innerHTML = `
@@ -18,63 +16,62 @@ export class PaletaView{
         <ul class="ul-paleta-cor">
           <li>
             <button class="btn-paleta">
-              <div class="bolinha-cor"></div>
+              <div class="bolinha-cor btn-roxo"></div>
               <p class="texto-cor">Roxo</p>
             </button>
           </li>
           <li>
             <button class="btn-paleta">
-              <div class="bolinha-cor"></div>
+              <div class="bolinha-cor btn-amarelo"></div>
               <p class="texto-cor">Amarelo</p>
             </button>
           </li>
           <li>
             <button class="btn-paleta">
-              <div class="bolinha-cor"></div>
+              <div class="bolinha-cor btn-vermelho"></div>
               <p class="texto-cor">Vermelho</p>
             </button>
           </li>
           <li>
             <button class="btn-paleta">
-              <div class="bolinha-cor"></div>
+              <div class="bolinha-cor btn-verde"></div>
               <p class="texto-cor">Verde</p>
             </button>
           </li>
           <li>
             <button class="btn-paleta">
-              <div class="bolinha-cor"></div>
+              <div class="bolinha-cor btn-rosa"></div>
               <p class="texto-cor">Rosa</p>
             </button>
           </li>
           <li>
             <button class="btn-paleta">
-              <div class="bolinha-cor"></div>
+              <div class="bolinha-cor btn-azul"></div>
               <p class="texto-cor">Azul</p>
             </button>
           </li>
         </ul>
         `
 
-        this.view.appendChild(containerPaleta);
-        
+        const overlay = document.createElement("div");
+        overlay.classList.add("fundoEscuro");
+        this.view.appendChild(overlay);
+
+        overlay.appendChild(containerPaleta);
 
         requestAnimationFrame(() => {
             containerPaleta.classList.add('form-animation-enter-active');
         });
 
-        this.abrirOverLay()
-       /* const btnFecharPateta = document.querySelector("fecharOverlay")
+        const btnFecharPateta = document.querySelector(".fecharOverlay")
         btnFecharPateta.addEventListener("click", () => {
             this.fecharOverLay()
-        })*/
+        })
     }
 
-    abrirOverLay(){
-        this.body.classList.add("mostrarFundo");
-       
-    }
 
     fecharOverLay(){
-         this.body.classList.remove("mostrarFundo");
+      const overlay = document.querySelector(".fundoEscuro");
+      overlay.remove();
     }
 }

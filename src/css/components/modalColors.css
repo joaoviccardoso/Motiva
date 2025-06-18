@@ -5,7 +5,7 @@
     width: 220px;
     height: 170px;
     padding: .5rem;
-    background-color: var(--roxo-escuro);
+    background-color: var(--roxo-claro);
 }
 
 .container-titulo-paleta-cor{
@@ -20,21 +20,46 @@
     margin-top: 8px;
 }
 
+.fundoEscuro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* transparência */
+    z-index: 1000;
+}
+
 .bolinha-cor{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #000;
 }
 
-/* Oculta elementos */
-.mostrarFundo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* transparência */
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.5)
+.btn-roxo{
+    background: var(--roxo-escuro);
 }
+
+.btn-amarelo{
+    background: var(--amarelo-escuro);
+}
+
+.btn-vermelho{
+    background: var(--vermelho-escuro);
+}
+
+.btn-verde{
+    background:var(--verde-escuro);
+}
+
+.btn-rosa{
+    background: var(--rosa-escuro);
+}
+
+.btn-azul{
+    background: var(--azul-escuro);
+}
+
