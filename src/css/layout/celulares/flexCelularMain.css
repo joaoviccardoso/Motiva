@@ -16,3 +16,14 @@
 .main-container-pesquisa, .header-nav-titulo{
     display: none;
 }
+
+@media (min-width: 360px) and (max-width: 440px) {
+    .main-container-mensagens{
+        flex-direction: column;
+    }
+
+    .main-container-informacoes{
+        display: flex;
+        justify-content: space-between;
+    }
+}

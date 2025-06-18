@@ -10,3 +10,14 @@
     text-align: center;
     color: var(--roxo-escuro);
 }
+
+@media (min-width: 360px) and (max-width: 440px) {
+    .header-titulo{
+        font-size: var(--font-size-mobile-grande-titulo);
+        padding-bottom: .6rem;
+    }
+
+    .header-texto{
+        font-size:  var(--font-size-mobile-grande-texto);
+    }
+}

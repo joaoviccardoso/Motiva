@@ -30,3 +30,13 @@
 #lixeira, #editar{
     display: none;
 }
+
+@media (min-width: 360px) and (max-width: 440px) {
+    .main-container-mensagemCriada{
+        width: 100%;
+    }
+
+    #lixeira, #editar{
+        display: block;
+    }
+}
