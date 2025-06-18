@@ -1,6 +1,6 @@
 export class PaletaView{
-    constructor(container){
-        this.view = document.querySelector(container);
+    constructor(){
+        this.view = document.querySelector("#container-mensagens")
         this.body = document.querySelector("body")
     }
 

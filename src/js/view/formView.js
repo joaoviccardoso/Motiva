@@ -1,10 +1,10 @@
 export class FormView{
-    constructor(container){
-        this.container = document.querySelector(container);
+    constructor(){
+        this.view = document.querySelector("#container-mensagens")
     }
 
-    gerarForm(){
-        this.container.innerHTML = '';
+        gerarForm(){
+        this.view.innerHTML = '';
 
         const form = document.createElement('form');
         form.classList.add("main-container-form", "form-animation-enter")
@@ -38,7 +38,7 @@ export class FormView{
                 </fieldset>
             `;
 
-            this.container.appendChild(form)
+            this.view.appendChild(form)
 
             requestAnimationFrame(() => {
                 form.classList.add('form-animation-enter-active');

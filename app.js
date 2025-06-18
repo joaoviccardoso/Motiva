@@ -1,9 +1,8 @@
-import { FormController } from "./src/js/controller/formController.js";
-import { PaletaController } from "./src/js/controller/paletaController.js";
+import { NavController } from "./src/js/controller/NavController.js";
 
-const Form = new FormController();
-Form.carregarForm();
+const NavControlle = new NavController()
+NavControlle.garregarPaletaCor()
+NavControlle.carregarForm()
 
-const PaletaCor = new PaletaController();
-PaletaCor.garregarPaletaCor();
+
 
