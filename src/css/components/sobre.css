@@ -1,0 +1,15 @@
+.container-sobre{
+    border: 2px solid var(--roxo-escuro);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 8px, rgba(0, 0, 0, 0.20) 0px 3px 3px;
+}
+
+.container-sobre-titulo{
+    padding-bottom: 1rem;
+    font-size: var(--font-size-mobile-titulo);
+}
+
+.container-sobre-texto p {
+    padding-bottom: .8rem;
+}
