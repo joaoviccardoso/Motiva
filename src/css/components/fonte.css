@@ -10,19 +10,19 @@
     text-align: center;
     color: var(--roxo-escuro);
 }
-
+/*Celulares pequenos*/
 @media (min-width: 290px) and (max-width: 329px) {
     .header-texto{
         font-size: .6rem;
     }
 }
-
+/*Celulares medio*/
 @media (min-width: 330px) and (max-width: 380px) {
     .header-texto{
         font-size:  var(--font-size-mobile-texto);
     }
 }
-
+/*Celulares grande*/
 @media (min-width: 381px) and (max-width: 440px) {
     .header-titulo{
         font-size: var(--font-size-mobile-grande-titulo);
@@ -31,5 +31,18 @@
 
     .header-texto{
         font-size:  var(--font-size-mobile-grande-texto);
+    }
+}
+
+/*Desktop*/
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .header-titulo{
+        font-size: var(--font-size-desktop-titulo);
+        margin-bottom: 1.5rem;
+    }
+
+    .header-texto{
+        font-size: var(--font-size-mobile-texto);
     }
 }

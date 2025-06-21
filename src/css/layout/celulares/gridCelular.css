@@ -18,3 +18,14 @@ main{
     grid-area: main;
     background: var(--roxo-claro);
 }
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+    body{
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+    "header main"
+    "header main"
+    ;
+}
+}

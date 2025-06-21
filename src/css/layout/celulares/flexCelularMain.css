@@ -17,13 +17,23 @@
     display: none;
 }
 
+/*Celulares Tela grande*/
 @media (min-width: 370px) and (max-width: 440px) {
     .main-container-mensagens{
         flex-direction: column;
+        width: 80%;
+        height: 500px;
     }
 
     .main-container-informacoes{
         display: flex;
         justify-content: space-between;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .main-container-pesquisa, .header-nav-titulo{
+        display: block;
     }
 }

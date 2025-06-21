@@ -30,16 +30,43 @@
     background-color: var(--roxo-escuro);
 }
 
+/*Celulares Tela menores*/
 @media (min-width: 330px) and (max-width: 380px) {
     .header-container-texto{
         padding: 1rem;
     }
 }
 
+/*Celulares Tela grande*/
 @media (min-width: 381px) and (max-width: 440px) {
     .header-nav{
         display: flex;
         align-items: center;
         height: 45px;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1000px) and (max-width: 1400px) {
+    /*Container Titulo*/
+    .header{
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .header-container-texto{
+        height: 25vh;
+        justify-content: center;
+    }
+
+    .header-nav{
+        height: 75vh;
+    }
+
+    /*Container Nav*/
+    .header-nav-ul{
+        flex-direction: column;
+        padding-left: .8rem;
+        gap: 22px;
     }
 }

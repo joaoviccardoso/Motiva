@@ -72,4 +72,43 @@
     }
 }
 
+/*Desktop*/
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .header-nav-descricaoBtn{
+        display: block;
+        color: var(--branco);
+        margin-left: 1rem;
+    }
+
+    .header-nav-btn{
+        display: flex;
+        justify-content: start;
+        width: 280px;
+        height: 65px;
+        border-radius: 16px;
+        border: solid 3px var(--branco);
+        font-size: var(--font-size-mobile-grande-titulo);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .header-nav-img{
+        width: 32px;
+        height: 32px;
+    }
+
+    #btn-open-sobre{
+        padding-left: 1.4rem;
+    }
+
+    .header-nav-titulo{
+        font-size: var(--font-size-mobile-grande-titulo);
+        color: var(--branco);
+        margin: 12px 12px;
+    }
+
+    .img-sobre{
+        padding-right: .6rem;
+    }
+}
+
 
