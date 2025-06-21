@@ -11,7 +11,19 @@
     color: var(--roxo-escuro);
 }
 
-@media (min-width: 360px) and (max-width: 440px) {
+@media (min-width: 290px) and (max-width: 329px) {
+    .header-texto{
+        font-size: .6rem;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 380px) {
+    .header-texto{
+        font-size:  var(--font-size-mobile-texto);
+    }
+}
+
+@media (min-width: 381px) and (max-width: 440px) {
     .header-titulo{
         font-size: var(--font-size-mobile-grande-titulo);
         padding-bottom: .6rem;

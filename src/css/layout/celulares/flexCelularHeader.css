@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 /*Campo Btns*/
@@ -30,8 +30,13 @@
     background-color: var(--roxo-escuro);
 }
 
+@media (min-width: 330px) and (max-width: 380px) {
+    .header-container-texto{
+        padding: 1rem;
+    }
+}
 
-@media (min-width: 360px) and (max-width: 440px) {
+@media (min-width: 381px) and (max-width: 440px) {
     .header-nav{
         display: flex;
         align-items: center;
