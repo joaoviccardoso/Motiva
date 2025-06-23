@@ -10,6 +10,11 @@
     width: 140px;
 }
 
+.main-container-autoEhCategoria{
+    display: flex;
+    align-items: center;
+}
+
 .main-container-texto{
     font-size: var(--font-size-mobile-texto);
     padding: .3rem;
@@ -34,6 +39,27 @@
 @media (min-width: 360px) and (max-width: 440px) {
     .main-container-mensagemCriada{
         width: 100%;
+    }
+
+    .main-container-informacoes{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #lixeira, #editar{
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 2400px) {
+    .main-container-mensagemCriada{
+        width: 300px;
+        height: 105px;
+    }
+
+    .main-container-informacoes{
+        display: flex;
+        justify-content: space-between;
     }
 
     #lixeira, #editar{

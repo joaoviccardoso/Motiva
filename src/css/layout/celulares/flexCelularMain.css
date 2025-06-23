@@ -24,11 +24,6 @@
         width: 80%;
         height: 500px;
     }
-
-    .main-container-informacoes{
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
 /*Desktop*/
@@ -44,6 +39,7 @@
 
     .main-container-mensagens{
         width: 100%;
+        gap: 2.6rem;
     }
 
     .header-nav-titulo{
