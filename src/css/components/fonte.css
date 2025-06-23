@@ -36,7 +36,7 @@
 
 /*Desktop*/
 
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (min-width: 1000px) and (max-width: 1800px) {
     .header-titulo{
         font-size: var(--font-size-desktop-titulo);
         margin-bottom: 1.5rem;

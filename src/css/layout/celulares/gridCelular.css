@@ -19,9 +19,9 @@ main{
     background: var(--roxo-claro);
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 2400px) {
     body{
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 100vh;
     grid-template-areas:
     "header main"

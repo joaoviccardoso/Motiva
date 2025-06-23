@@ -1,0 +1,31 @@
+@media (min-width: 1200px) and (max-width: 2400px) {
+    .main-pesquisa {
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        border-radius: 40px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .main-input-pesquisa {
+        flex: 1;
+        padding: 15px 20px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border-radius: 0;
+    }
+
+    .main-btn-pesquisa {
+        background-color: var(--roxo-btn);
+        border: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-family: var(--font-size-desktop-texto);
+        color: white;
+        cursor: pointer;
+        border-radius: 0;
+        font-weight: bold;
+    }
+}

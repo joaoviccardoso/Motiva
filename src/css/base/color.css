@@ -1,16 +1,24 @@
 :root{
     --color-letra: #2E2E2E;
+    
     --roxo-claro: #EDE6F6;
     --roxo-escuro: #5D3FD3;
+    --roxo-btn: #BFAAFF;
+
     --amarelo-claro:#FFF0C1;
     --amarelo-escuro:#FFD56B;
+
     --vermelho-claro:#FFDADA;
     --vermelho-escuro:#FF6B6B;
+
     --verde-claro:#D6FFE6;
     --verde-escuro:#A3F7BF;
+
     --azul-claro:#CAF0F8;
     --azul-escuro:#A0E7E5;
+
     --rosa-claro:#FFD6F5;
     --rosa-escuro:#FF9CEE;
+
     --branco: #FFF;
 }
