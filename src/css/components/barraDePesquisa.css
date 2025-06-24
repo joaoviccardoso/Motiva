@@ -1,5 +1,4 @@
-@media (min-width: 1200px) and (max-width: 2400px) {
-    .main-pesquisa {
+.main-pesquisa {
         display: flex;
         width: 100%;
         max-width: 1000px;
@@ -27,5 +26,16 @@
         cursor: pointer;
         border-radius: 0;
         font-weight: bold;
+    }
+
+@media (min-width: 800px) and (max-width: 949px) {
+    .main-pesquisa {
+        max-width: 550px;
+    }
+}    
+
+@media (min-width: 950px) and (max-width: 1300px) {
+    .main-pesquisa {
+        max-width: 640px;
     }
 }

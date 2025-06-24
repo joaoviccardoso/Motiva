@@ -16,6 +16,8 @@
 
 .header-nav-descricaoBtn{
     display: none;
+    color: var(--branco);
+    margin-left: 1rem;
 }
 
 /*Btn main*/
@@ -23,19 +25,6 @@
 .main-btn-mensagem{
     border: none;
     background-color: transparent;
-}
-
-/*btn main form*/
-
-.main-btn-categoria{
-    width: 130px;
-    height: 21px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 8px, rgba(0, 0, 0, 0.20) 0px 3px 3px;
-    border-radius: 8px;
-    background-color: var(--roxo-claro);
-    font-size: .62rem;
-    font-family: var(--font-principal);
 }
 
 /*btn paletas de cores*/
@@ -60,6 +49,17 @@
     height: 35px;
 }
 
+.main-btn-novaMensagem{
+        width: 100%;
+        max-width: 150px;
+        height: 40px;
+        border-radius: 16px;
+        background-color: var(--roxo-escuro);
+        border: none;
+        font-family: var(--font-size-desktop-texto);
+        color: var(--branco);
+}
+
 @media (min-width: 360px) and (max-width: 440px) {
     .header-nav-btn{
         height: 40px;
@@ -72,18 +72,33 @@
     }
 }
 
-/*Desktop*/
-@media (min-width: 1200px) and (max-width: 2400px) {
+@media (min-width: 800px) and (max-width: 900px) {
+    .header-nav-btn{
+        width: 225px;
+        display: flex;
+        justify-content: start;
+        height: 65px;
+        border-radius: 16px;
+        border: solid 3px var(--branco);
+        font-size: var(--font-size-mobile-grande-titulo);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
     .header-nav-descricaoBtn{
         display: block;
-        color: var(--branco);
-        margin-left: 1rem;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 901px) and (max-width: 2400px) {
+    .header-nav-descricaoBtn{
+        display: block;
     }
 
     .header-nav-btn{
+        width: 250px;
         display: flex;
         justify-content: start;
-        width: 280px;
         height: 65px;
         border-radius: 16px;
         border: solid 3px var(--branco);
@@ -108,17 +123,6 @@
 
     .img-sobre{
         padding-right: .6rem;
-    }
-
-    .main-btn-novaMensagem{
-        width: 100%;
-        max-width: 200px;
-        height: 40px;
-        border-radius: 16px;
-        background-color: var(--roxo-escuro);
-        border: none;
-        font-family: var(--font-size-desktop-texto);
-        color: var(--branco);
     }
 }
 

@@ -17,23 +17,15 @@ export class FormView{
                     <label for="" class="main-label-form">Autor</label>
                     <input type="text" class="main-input-form">
 
-                    <label for="" class="main-label-form">Mensagem</label>
-                    <input type="text" class="main-input-form" id="input-mensagem">
+                    <label class="main-label-form" for="mensagem">Mensagem:</label>
+                    <textarea class="main-input-form" id="input-mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem aqui..."></textarea>
 
                     <label for="" class="main-label-form">Senha para Editar</label>
                     <input type="text" class="main-input-form">
                 </div>
 
-                <div class="main-container-ul-categoria">
-                    <h4 class="main-categoria-titulo">Categorias</h4>
-                    <ul class="main-ul-form">
-                    <li class="main-li-form"><button class="main-btn-categoria">Autoestima</button></li>
-                    <li class="main-li-form"><button class="main-btn-categoria">Superação</button></li>
-                    <li class="main-li-form"><button class="main-btn-categoria">Trabalho e Carreira</button></li>
-                    <li class="main-li-form"><button class="main-btn-categoria">Aprendizado</button></li>
-                    <li class="main-li-form"><button class="main-btn-categoria">Saúde Mental</button></li>
-                    <li class="main-li-form"><button class="main-btn-categoria">Gratidão</button></li>
-                    </ul>
+                <div class="main-div-salvarForm">
+                    <button class="main-btn-novaMensagem">Salvar</button>
                 </div>
                 </fieldset>
             `;

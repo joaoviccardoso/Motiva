@@ -34,8 +34,17 @@
     }
 }
 
-/*Desktop*/
 
+/*Tablets*/
+@media (min-width: 441px) and (max-width: 799px) {
+    .header-titulo{
+        font-size: var(--font-size-mobile-grande-titulo);
+        padding-bottom: .6rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
+/*Desktop*/
 @media (min-width: 1000px) and (max-width: 1800px) {
     .header-titulo{
         font-size: var(--font-size-desktop-titulo);
