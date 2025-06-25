@@ -1,5 +1,7 @@
 .container-sobre{
     border: 2px solid var(--roxo-escuro);
+    width: 80%;
+    margin-top: 2rem;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 8px, rgba(0, 0, 0, 0.20) 0px 3px 3px;

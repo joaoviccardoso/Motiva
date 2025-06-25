@@ -7,12 +7,13 @@ export class NavController{
         this.btnOpenPaleta = document.querySelector("#btn-open-paletaDeCor");
         this.btnOpenForm = document.querySelector("#btn-open-form");
         this.btnOpenSobre = document.querySelector("#btn-open-sobre");
+        this.btnOpenFormeBanner = document.querySelector("#novaMensagem")
     }
 
     garregarPaletaCor(){
-        this.btnOpenPaleta.addEventListener("click", () =>{
+        this.btnOpenPaleta.addEventListener("click", (event) =>{
             const view = new PaletaView()
-            view.gerarPaleta()
+            view.gerarPaleta(event.currentTarget)
         })
     }
 
@@ -27,6 +28,13 @@ export class NavController{
         this.btnOpenSobre.addEventListener("click", () => {
             const view = new SobreView();
             view.gerarSobre();
+        })
+    }
+
+    carregarFormBanner(){
+        this.btnOpenFormeBanner.addEventListener("click", () => {
+            const view = new FormView()
+            view.gerarForm()
         })
     }
 }

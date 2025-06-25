@@ -4,5 +4,6 @@ const NavControlle = new NavController()
 NavControlle.garregarPaletaCor()
 NavControlle.carregarForm()
 NavControlle.carregarSobre()
+NavControlle.carregarFormBanner()
 
 

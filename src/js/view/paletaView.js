@@ -4,9 +4,18 @@ export class PaletaView{
         this.body = document.querySelector("body")
     }
 
-    gerarPaleta(){
+    gerarPaleta(btn){
+        const rect = btn.getBoundingClientRect();
         const containerPaleta = document.createElement("div");
         containerPaleta.classList.add("container-paleta-cor", "form-animation-enter");
+
+        // posicionamento absoluto
+        containerPaleta.style.position = "fixed";
+        containerPaleta.style.top = `${rect.bottom + 8}px`; // 8px abaixo do botão
+        containerPaleta.style.left = `${rect.left}px`;
+        containerPaleta.style.zIndex = "1001";
+
+
         containerPaleta.innerHTML = `
         <div class="container-titulo-paleta-cor">
           <h4>Color</h4>
