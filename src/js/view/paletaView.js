@@ -4,7 +4,7 @@ export class PaletaView{
         this.body = document.querySelector("body")
     }
 
-    gerarPaleta(btn, event){
+    gerarPaleta(btn){
       
         const rect = btn.getBoundingClientRect();
         const containerPaleta = document.createElement("div");
