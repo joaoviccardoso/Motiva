@@ -4,7 +4,8 @@ export class PaletaView{
         this.body = document.querySelector("body")
     }
 
-    gerarPaleta(btn){
+    gerarPaleta(btn, event){
+      
         const rect = btn.getBoundingClientRect();
         const containerPaleta = document.createElement("div");
         containerPaleta.classList.add("container-paleta-cor", "form-animation-enter");

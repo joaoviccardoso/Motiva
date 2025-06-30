@@ -25,12 +25,12 @@
 /*Celulares grande*/
 @media (min-width: 381px) and (max-width: 440px) {
     .header-titulo{
-        font-size: var(--font-size-mobile-grande-titulo);
+        font-size: var(--font-size-mobile-titulo);
         padding-bottom: .6rem;
     }
 
     .header-texto{
-        font-size:  var(--font-size-mobile-grande-texto);
+        font-size:  var(--font-size-mobile-texto);
     }
 }
 
