@@ -1,4 +1,4 @@
-import getapi from "../api/api.js"
+import apiMetodosHttp from "../api/api.js";
 
 class CarregarMensagem{
     constructor(){
@@ -6,7 +6,7 @@ class CarregarMensagem{
     }
 
     async CarregarTodasAsMensagens(){
-        const mensagens = await getapi()
+        const mensagens = await apiMetodosHttp.getapi()
         console.log(mensagens[0])
 
         mensagens.forEach(mensagem => {
