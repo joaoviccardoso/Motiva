@@ -17,13 +17,13 @@ export class FormView{
                 </div>
                 <div class="main-container-input-form">
                     <label for="" class="main-label-form">Autor</label>
-                    <input type="text" class="main-input-form" id="autor">
+                    <input type="text" class="main-input-form" id="autor" required>
 
                     <label class="main-label-form" for="mensagem">Mensagem:</label>
-                    <textarea class="main-input-form" id="input-mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    <textarea class="main-input-form" id="input-mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem aqui..." required></textarea>
 
                     <label for="" class="main-label-form">Senha para Editar</label>
-                    <input type="text" class="main-input-form" id="senha">
+                    <input type="text" class="main-input-form" id="senha" required>
                 </div>
 
                 <div class="main-div-salvarForm">
