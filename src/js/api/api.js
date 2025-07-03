@@ -5,6 +5,12 @@ const apiMetodosHttp = {
         return resConvertida
     },
 
+    async getapiPorId(id){
+        const res = await fetch(`https://todo-listback.onrender.com/mensagem/${id}`) 
+        const resConvertida = await res.json()
+        return resConvertida
+    },
+
     async postApi(dados){
         try {
             console.log(dados)
@@ -20,6 +26,17 @@ const apiMetodosHttp = {
             alert("Erro ao cadastrar dados")
             return
         }        
+    },
+
+    async deleteApi(id){
+        try {
+            const res = await fetch(`https://todo-listback.onrender.com/mensagem/${id}`,{
+                method: "DELETE"
+            })
+        } catch {
+            alert("Erro ao deletar sua mensagem")
+            return
+        }
     }
 }
 

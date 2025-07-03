@@ -1,5 +1,7 @@
 import apiMetodosHttp from "../api/api.js";
+import senhaInput from "../view/inputSenha.js";
 import { gerarMensagem } from "../view/mensagemView.js";
+import { modal } from "../view/modal.js";
 
 class CarregarMensagem{
     constructor(){
@@ -21,10 +23,26 @@ class CarregarMensagem{
         
     }
 
-    pegarIdDosbtnsEhDeletar(btns){
+    async pegarIdDosbtnsEhDeletar(btns){
         btns.forEach(btn => {
             btn.addEventListener('click', () => {
+                this.containerMensagens.innerHTML = senhaInput.gerarInputDeConfirmacao();
+                const btnConfirmar = document.querySelector("#btn-confirmar");
                 const id = btn.dataset.id;
+
+                btnConfirmar.addEventListener('click', async (event) =>{
+                    event.preventDefault();
+                    const senha = document.querySelector("#confirmarSenha").value;
+                    const mensagem = await apiMetodosHttp.getapiPorId(id);
+                
+                    if(senha === mensagem.senha){
+                        apiMetodosHttp.deleteApi(id)
+                        modal.mostrarDialogCerto("28a745", "Tudo Certo", "Sua Mensagem foi Deletada com sucesso")
+                    } else {
+                        modal.mostrarDialogCerto("d9534f", "Ops...", "Houve um erro para deletar sua mensagem")
+                    }
+                })
+
                 console.log(id)
             })
         })

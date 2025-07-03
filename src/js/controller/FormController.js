@@ -24,7 +24,6 @@ class Form{
 
             apiMetodosHttp.postApi(dados);
             modal.mostrarDialogCerto("Cadastro realizado com sucesso!", "Muito obrigado por compartilhar sua mensagem.")
-            
         })
     }
 

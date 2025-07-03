@@ -1,12 +1,12 @@
 export const modal = {
-    mostrarDialogCerto(titulo, texto){
+    mostrarDialogCerto(cor,titulo, texto){
         const dialog = document.getElementById("myDialog");
 
         dialog.innerHTML = `
                 <img>
-                <h2 class="avisoModal">${titulo}</h2>
+                <h2 class="avisoModal" style="color:#${cor}">${titulo}</h2>
                 <p class="mensagemModal">${texto}</p>
-                <button class="btn-modal" id="closeDialog">Fechar</button>
+                <button class="btn-modal" id="closeDialog" style="background:#${cor}">Fechar</button>
             `
         
             dialog.showModal();
