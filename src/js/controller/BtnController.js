@@ -1,8 +1,9 @@
 import { FormView } from "../view/formView.js";
 import { PaletaView } from "../view/paletaView.js";
 import { SobreView } from "../view/sobreView.js";
+import Form from "./FormController.js";
 
-export class NavController{
+export class BtnController{
     constructor(){
         this.btnOpenPaleta = document.querySelector("#btn-open-paletaDeCor");
         this.btnOpenForm = document.querySelector("#btn-open-form");

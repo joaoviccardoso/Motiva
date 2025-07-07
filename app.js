@@ -1,14 +1,15 @@
 import CarregarMensagem from "./src/js/controller/CarregarMensagem.js";
-import { NavController } from "./src/js/controller/NavController.js";
+import { BtnController } from "./src/js/controller/BtnController.js";
 
-const NavControlle = new NavController()
+const BtnControlle = new BtnController()
 const GerarMensagens = new CarregarMensagem()
-
-NavControlle.garregarPaletaCor()
-NavControlle.carregarForm()
-NavControlle.carregarSobre()
-NavControlle.carregarFormBanner()
 GerarMensagens.CarregarTodasAsMensagens()
+BtnControlle.garregarPaletaCor()
+BtnControlle.carregarForm()
+BtnControlle.carregarSobre()
+BtnControlle.carregarFormBanner()
+
+
 
 
 

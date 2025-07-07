@@ -1,3 +1,5 @@
+import { modal } from "../view/modal.js";
+
 const apiMetodosHttp = {
     async getapi(){
         const res = await fetch("https://todo-listback.onrender.com/mensagem") 
@@ -24,6 +26,34 @@ const apiMetodosHttp = {
         return await res.json()  
         } catch (error) {
             alert("Erro ao cadastrar dados")
+            return
+        }        
+    },
+
+    async putApi(id, dados){
+        try {
+            console.log(dados)
+            const mensagem = await this.getapiPorId(id)
+            
+            if(mensagem.senha === dados.senha){
+                const res = await fetch(`https://todo-listback.onrender.com/mensagem/${id}`,{
+                method: "PUT",
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify(dados)
+            });
+
+            modal.mostrarDialogCerto("28a745", "Atualização realizada com sucesso!", "Muito obrigado por compartilhar sua mensagem.");
+            return await res.json();
+
+            }else{
+                //erro de senha 
+                modal.mostrarDialogCerto("d9534f", "Ops...", "Houve um erro para atualizar sua mensagem")
+                return   
+            }
+        } catch (error) {
+            alert("Erro ao editar dados")
             return
         }        
     },

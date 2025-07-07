@@ -5,7 +5,7 @@ export class FormView{
         this.view = document.querySelector("#container-mensagens")
     }
 
-        gerarForm(){
+        gerarForm(id){
         this.view.innerHTML = '';
 
         const form = document.createElement('form');
@@ -40,7 +40,7 @@ export class FormView{
 
             setTimeout(() => {
                 const formController = new Form();
-                formController.pegarValores();
+                formController.pegarValores(id);
             }, 0);
         }   
 }
