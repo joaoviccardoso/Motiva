@@ -47,6 +47,7 @@ fieldset{
 
 .main-input-form{
     height: 30px;
+    width: 100%;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 8px, rgba(0, 0, 0, 0.20) 0px 3px 3px;
     background-color: var(--roxo-claro);
@@ -61,6 +62,7 @@ fieldset{
 
 #input-mensagem{
     height: 70px;
+    width: 100%;
 }
 
 .main-div-salvarForm{
@@ -81,7 +83,7 @@ fieldset{
     }
 
     #input-mensagem{
-        width: 250px;
+        width: 100%;
     }
 }
 
