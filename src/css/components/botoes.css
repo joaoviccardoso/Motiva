@@ -54,7 +54,7 @@
         max-width: 150px;
         height: 40px;
         border-radius: 16px;
-        background-color: var(--roxo-escuro);
+        background-color: var(--cor-nav);
         border: none;
         font-family: var(--font-size-desktop-texto);
         color: var(--branco);

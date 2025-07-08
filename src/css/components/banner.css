@@ -7,10 +7,10 @@
         width: 100%;
         max-width: 450px;
         padding: 1.5rem;
-        border: 1px solid var(--roxo-btn);
+        border: 1px solid var(--cor-btn);
         border-radius: 16px;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        background-color: var(--roxo-btn);
+        background-color: var(--cor-btn);
     }
 
     .main-novaMensagem{

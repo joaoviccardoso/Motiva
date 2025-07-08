@@ -1,14 +1,14 @@
 .header-titulo{
    font-size: var(--font-size-mobile-titulo);
    font-family: var(--font-principal);
-   color: var(--roxo-escuro);
+   color: var(--cor-nav);
 }
 
 .header-texto{
     font-size:  var(--font-size-mobile-texto);
     font-family: var(--font-principal);
     text-align: center;
-    color: var(--roxo-escuro);
+    color: var(--cor-nav);
 }
 /*Celulares pequenos*/
 @media (min-width: 290px) and (max-width: 329px) {

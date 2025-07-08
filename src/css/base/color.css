@@ -1,24 +1,53 @@
 :root{
     --color-letra: #2E2E2E;
     
-    --roxo-claro: #EDE6F6;
+    --cor-fundo: #EDE6F6;
+    --cor-nav: #5D3FD3;
     --roxo-escuro: #5D3FD3;
-    --roxo-btn: #BFAAFF;
-
-    --amarelo-claro:#FFF0C1;
+    --cor-btn: #BFAAFF;
     --amarelo-escuro:#FFD56B;
-
-    --vermelho-claro:#FFDADA;
     --vermelho-escuro:#FF6B6B;
-
-    --verde-claro:#D6FFE6;
     --verde-escuro:#A3F7BF;
-
-    --azul-claro:#CAF0F8;
     --azul-escuro:#A0E7E5;
-
-    --rosa-claro:#FFD6F5;
     --rosa-escuro:#FF9CEE;
-
     --branco: #FFF;
 }
+
+.roxo-model{
+    --cor-fundo: #EDE6F6;
+    --cor-nav: #5D3FD3;
+    --cor-btn: #BFAAFF;
+}
+
+.amarelo-model{
+    --cor-fundo:#FFF0C1;
+    --cor-nav:#FFD56B;
+    --cor-btn: #FFF2B3;
+}
+
+.vermelho-model{
+    --cor-fundo:#FFDADA;
+    --cor-nav:#FF6B6B;
+    --cor-btn: #FFB3B3;
+}
+
+.verde-model{
+    --cor-fundo:#D6FFE6;
+    --cor-nav:#A3F7BF;
+    --cor-btn: #C1FFD7;
+}
+
+
+.azul-model{
+    --cor-fundo:#CAF0F8;
+    --cor-nav:#A0E7E5;
+    --cor-btn: #A3C4FF;
+}
+
+
+.rosa-model{
+    --cor-fundo:#FFD6F5;
+    --cor-nav:#FF9CEE;
+    --cor-btn: #FFCCE5;
+}
+

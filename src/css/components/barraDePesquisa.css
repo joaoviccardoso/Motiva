@@ -17,7 +17,7 @@
     }
 
     .main-btn-pesquisa {
-        background-color: var(--roxo-btn);
+        background-color: var(--cor-btn);
         border: none;
         padding: 15px 30px;
         font-size: 16px;
