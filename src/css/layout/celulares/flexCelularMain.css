@@ -5,12 +5,18 @@
 }
 
 .main-container-mensagens{
-    width: 320px;
-    padding-top: 2rem;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+#container-mensagens{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 18px;
 }
 

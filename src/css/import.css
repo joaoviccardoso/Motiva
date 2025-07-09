@@ -2,7 +2,6 @@
 @import url(base/color.css);
 @import url(base/fonts.css);
 @import url(layout/celulares/flexCelularHeader.css);
-@import url(layout/celulares/flexCelular.css);
 @import url(layout/celulares/flexCelularMain.css);
 @import url(layout/celulares/gridCelular.css);
 @import url(components/botoes.css);
@@ -15,3 +14,4 @@
 @import url(components/banner.css);
 @import url(components/modal.css);
 @import url(components/confirmarSenha.css);
+@import url(components/louder.css);

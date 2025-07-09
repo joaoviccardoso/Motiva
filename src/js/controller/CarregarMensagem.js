@@ -9,11 +9,15 @@ import Form from "./FormController.js";
 class CarregarMensagem{
     constructor(){
         this.containerMensagens = document.querySelector("#container-mensagens");
+        this.loader = document.querySelector("#loader");
         this.formView = new FormView();
         this.form = new Form();
     }
 
     async CarregarTodasAsMensagens(){
+        this.loader.style.display = "block"
+        this.containerMensagens.style.display = "none"
+
         const mensagens = await apiMetodosHttp.getapi()
         console.log(mensagens[0]._id)
 
@@ -21,6 +25,8 @@ class CarregarMensagem{
             this.containerMensagens.innerHTML += gerarMensagem.mensagemCriada(mensagem)
         });
 
+        this.containerMensagens.style.display = "flex"
+        this.loader.style.display = "none"
         const btnsLixeira = document.querySelectorAll('.lixeira');
         const btnsEditar = document.querySelectorAll('.editar');
         this.pegarIdDosbtnsEhDeletar(btnsLixeira);

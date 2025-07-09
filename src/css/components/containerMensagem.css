@@ -6,12 +6,13 @@
     background-color: var(--branco);
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 8px 16px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    height: 150px;
-    width: 140px;
+    width: 80%;
+    height: 140px;
 }
 
 .main-container-autoEhCategoria{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -29,6 +30,7 @@
 
 .main-container-informacoes{
     display: flex;
+    justify-content: space-between;
     font-size: var(--font-size-mobile-texto);
     padding: .3rem;
 }
@@ -37,25 +39,6 @@
 .main-container-botoes{
     display: flex;
     align-items: end;
-}
-
-.lixeira, .editar{
-    display: none;
-}
-
-@media (min-width: 360px) and (max-width: 440px) {
-    .main-container-mensagemCriada{
-        width: 80%;
-    }
-
-    .main-container-informacoes{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .lixeira, .editar{
-        display: block;
-    }
 }
 
 @media (min-width: 800px) and (max-width: 2400px) {
