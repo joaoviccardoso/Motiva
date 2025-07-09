@@ -19,7 +19,10 @@ class CarregarMensagem{
         this.containerMensagens.style.display = "none"
 
         const mensagens = await apiMetodosHttp.getapi()
-        console.log(mensagens[0]._id)
+        if(!mensagens === ""){
+            this.containerMensagens.innerHTML += "<h3>Nem uma Criada.</h3>"
+            return
+        }
 
         mensagens.forEach(mensagem => {
             this.containerMensagens.innerHTML += gerarMensagem.mensagemCriada(mensagem)

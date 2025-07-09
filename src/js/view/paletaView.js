@@ -105,6 +105,7 @@ export class PaletaView{
           this.main.classList.add("roxo-model");
           this.banner.classList.add("roxo-model");
           this.btnPesquisa.classList.add("roxo-model");
+          localStorage.setItem("tema", id);
           this.fecharOverLay()
           break
         case "temaAmarelo":
@@ -113,6 +114,7 @@ export class PaletaView{
           this.main.classList.add("amarelo-model");
           this.banner.classList.add("amarelo-model");
           this.btnPesquisa.classList.add("amarelo-model");
+          localStorage.setItem("tema", id);
           this.fecharOverLay()
           break
         case "temaVermelho":
@@ -121,6 +123,7 @@ export class PaletaView{
           this.main.classList.add("vermelho-model");
           this.banner.classList.add("vermelho-model");
           this.btnPesquisa.classList.add("vermelho-model");
+          localStorage.setItem("tema", id);
           this.fecharOverLay()
           break
         case "temaVerde":
@@ -129,6 +132,7 @@ export class PaletaView{
           this.main.classList.add("verde-model");
           this.banner.classList.add("verde-model");
           this.btnPesquisa.classList.add("verde-model");
+          localStorage.setItem("tema", id);
           this.fecharOverLay()
           break
         case "temaRosa":
@@ -137,6 +141,7 @@ export class PaletaView{
           this.main.classList.add("rosa-model");
           this.banner.classList.add("rosa-model");
           this.btnPesquisa.classList.add("rosa-model");
+          localStorage.setItem("tema", id);
           this.fecharOverLay()
           break
         case "temaAzul":
@@ -145,6 +150,7 @@ export class PaletaView{
           this.main.classList.add("azul-model");
           this.banner.classList.add("azul-model");
           this.btnPesquisa.classList.add("azul-model");
+          localStorage.setItem("tema", id);
           this.fecharOverLay()
           break
       }
@@ -152,6 +158,9 @@ export class PaletaView{
 
     fecharOverLay(){
       const overlay = document.querySelector(".fundoEscuro");
+      if(overlay === null){
+        return
+      }
       overlay.remove();
     }
 }
