@@ -32,8 +32,10 @@ class CarregarMensagem{
         this.loader.style.display = "none"
         const btnsLixeira = document.querySelectorAll('.lixeira');
         const btnsEditar = document.querySelectorAll('.editar');
+        const btnsLike = document.querySelectorAll(".btn-likes");
         this.pegarIdDosbtnsEhDeletar(btnsLixeira);
         this.pegarIdDosbtnsEhEditar(btnsEditar);
+        this.curtirMensagem(btnsLike);
     }
 
     async pegarIdDosbtnsEhDeletar(btns){
@@ -71,6 +73,35 @@ class CarregarMensagem{
             })
         })
     }
+
+    curtirMensagem(btns){
+        btns.forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const id = btn.id.split("-")[1];
+                console.log(id)
+                let likedPosts = JSON.parse(localStorage.getItem("likedPosts") || "[]");
+
+                const jaCurtiu = likedPosts.includes(id);
+                console.log(jaCurtiu)
+                try{
+                    const resposta = await apiMetodosHttp.atualizarLikes(id, {liked: !jaCurtiu});
+
+                    if (jaCurtiu) {
+                        likedPosts = likedPosts.filter(postId => postId !== id);
+                    } else {
+                        likedPosts.push(id);
+                    }
+                    localStorage.setItem("likedPosts", JSON.stringify(likedPosts));
+                    const contador = btn.nextElementSibling; // <p class="contadorDeLike">
+                    contador.textContent = resposta.likes;
+                } catch{
+
+                }
+            })
+        })
+    }
+
+
 }
     
     

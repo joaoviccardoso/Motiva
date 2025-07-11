@@ -58,6 +58,20 @@ const apiMetodosHttp = {
         }        
     },
 
+    async atualizarLikes(id, dados){
+        try {
+            const resposta = await fetch(`https://todo-listback.onrender.com/mensagem/${id}/likes`, {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(dados)
+        });
+        return await resposta.json();
+        } catch (erro) {
+            console.error("Erro na API de like:", erro);
+            throw erro;
+        }
+    },
+
     async deleteApi(id){
         try {
             const res = await fetch(`https://todo-listback.onrender.com/mensagem/${id}`,{
