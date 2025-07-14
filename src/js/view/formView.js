@@ -27,7 +27,7 @@ export class FormView{
 
                     <label class="main-label-form">Categoria</label>
                     <select class="main-input-form" id="categoria">
-                            <option class="texto-option" value="">Escolha um Valor</option>
+                            <option class="texto-option" value="" disabled selected hidden>Escolha um Valor</option>
                             <option class="texto-option" value="motivacao">Motivação</option>
                             <option class="texto-option" value="humor">Humor</option>
                             <option class="texto-option" value="história">História</option>

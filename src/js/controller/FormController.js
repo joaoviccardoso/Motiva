@@ -15,6 +15,15 @@ class Form{
             const categoria = document.querySelector("#categoria").value
             const senha = document.querySelector("#senha").value;
 
+            if(categoria === ""){
+                modal.mostrarDialogCerto(
+                    "d9534f",
+                    "Escolha um campo",
+                    "Por favor, preencha o campo com uma categoria"
+                )
+                return
+            }
+
             const camposValidos = this.verificacaoCamposMinimos(autor, mensagem, senha);
             if (!camposValidos) return;
 
@@ -41,14 +50,15 @@ class Form{
         this.pegarValores(idBtn)
     }
 
-    verificacaoCamposMinimos(autor, mensagem, senha){
-        if(autor.length <= 3 && mensagem.length <= 10 && senha.length <= 3){
+    verificacaoCamposMinimos(autor, mensagem, senha, categoria){
+        if(autor.length <= 3 && mensagem.length <= 10 && senha.length <= 3 && categoria === "escolha"){
             modal.mostrarDialogCerto(
+                "d9534f",
                 "Campos muito curtos",
                 "Por favor, preencha os campos com mais informações:\n- Nome: mínimo 4 caracteres\n- Mensagem: mínimo 11 caracteres\n- Senha: mínimo 4 caracteres"
             )
             return false
-        }
+        } 
         return true
     }
 }
