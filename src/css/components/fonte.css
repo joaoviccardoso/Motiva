@@ -4,7 +4,7 @@
    color: var(--cor-nav);
 }
 
-.header-texto{
+.header-texto, .texto-option{
     font-size:  var(--font-size-mobile-texto);
     font-family: var(--font-principal);
     text-align: center;

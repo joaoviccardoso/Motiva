@@ -13,7 +13,7 @@
 .main-container-autoEhCategoria{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 3px;
 }
 
 .main-container-texto{
@@ -35,6 +35,14 @@
     padding: .3rem;
 }
 
+.categoria{
+    background-color: var(--cor-btn);
+    border-radius: 5px;
+    text-align: center;
+    padding: .2rem;
+    width: 85px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
 
 .main-container-botoes{
     display: flex;

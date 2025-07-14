@@ -8,19 +8,21 @@ class Form{
 
     pegarValores(idBtn){
         this.form.addEventListener("submit", (event) =>{
-             event.preventDefault();
+            event.preventDefault();
 
             const autor = document.querySelector("#autor").value;
             const mensagem = document.querySelector("#input-mensagem").value;
+            const categoria = document.querySelector("#categoria").value
             const senha = document.querySelector("#senha").value;
 
             const camposValidos = this.verificacaoCamposMinimos(autor, mensagem, senha);
             if (!camposValidos) return;
 
-            const dados = { autor, mensagem, senha };
+            const dados = { autor, mensagem, senha, categoria};
 
+            console.log(dados)
             console.log("ID recebido:", idBtn);
-
+            
             if (idBtn) {
                 apiMetodosHttp.putApi(idBtn, dados); // Não esqueça de passar o id para a API
                

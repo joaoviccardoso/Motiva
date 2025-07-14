@@ -24,6 +24,19 @@ export class FormView{
 
                     <label for="" class="main-label-form">Senha para Editar</label>
                     <input type="text" class="main-input-form" id="senha" required>
+
+                    <label class="main-label-form">Categoria</label>
+                    <select class="main-input-form" id="categoria">
+                            <option class="texto-option" value="">Escolha um Valor</option>
+                            <option class="texto-option" value="motivacao">Motivação</option>
+                            <option class="texto-option" value="humor">Humor</option>
+                            <option class="texto-option" value="história">História</option>
+                            <option class="texto-option" value="filosofia">Filosofia/Pensamentos</option>
+                            <option class="texto-option" value="romance">Romance/Relacionamentos</option>
+                            <option class="texto-option" value="misterio">Mistério</option>
+                            <option class="texto-option" value="aleatorias">Aleatórias</option>
+                    </select>
+                    
                 </div>
 
                 <div class="main-div-salvarForm">

@@ -10,6 +10,7 @@ export const gerarMensagem = {
                         <div class="main-container-autoEhCategoria">
                             <h3 class="autor">${mensagem.autor}</h3>
                             <p class="data">01/07/25</p>
+                            <p class="categoria">${mensagem.categoria}</p>
                         </div>
 
                         <div class="main-container-botoes">
