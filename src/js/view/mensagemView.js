@@ -13,7 +13,7 @@ export const gerarMensagem = {
                         </div>
 
                         <div class="main-container-botoes">
-                            <button id="like-${mensagem._id}" class="main-btn-mensagem btn-likes"><img src="./src/img/coracao.png" alt="Curtir"></button>
+                            <button id="like-${mensagem._id}" class="main-btn-mensagem btn-likes"><img class="img-curtida" src="./src/img/coracao.png" alt="Curtir"></button>
                             <p class="contadorDeLike">${mensagem.likes}</p>
                             <button data-id="${mensagem._id}" class="main-btn-mensagem lixeira"><img src="./src/img/trash 12.png" alt="Excluir"></button>
                             <button data-id="${mensagem._id}" class="main-btn-mensagem editar"><img src="./src/img/Vector (1).png" alt="Editar"></button>

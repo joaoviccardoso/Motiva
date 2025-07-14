@@ -94,11 +94,25 @@ class CarregarMensagem{
                     localStorage.setItem("likedPosts", JSON.stringify(likedPosts));
                     const contador = btn.nextElementSibling; // <p class="contadorDeLike">
                     contador.textContent = resposta.likes;
+                    this.atualizarBtnLike(jaCurtiu, id)
                 } catch{
-
+                    modal.mostrarDialogCerto("d9534f", "Ops...", "Houve um erro para Curtir sua mensagem")
                 }
             })
         })
+    }
+
+    atualizarBtnLike(jaCurtiu, id){
+        const btnLikeCurtido = document.querySelector(`#like-${id}`);
+        const img = btnLikeCurtido.querySelector("img");
+
+        if(jaCurtiu){
+            img.src = "./src/img/coracao.png",
+            img.alt = "descurtir"
+        } else{
+            img.src = "src/img/VectorVermelho.png",
+            img.alt = "curtir"
+        }
     }
 
 
