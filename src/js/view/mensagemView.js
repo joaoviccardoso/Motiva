@@ -1,3 +1,5 @@
+import formatarDataISO from "../utilidade/converterData.js"
+
 export const gerarMensagem = {
     mensagemCriada(mensagem){
         return `
@@ -9,7 +11,7 @@ export const gerarMensagem = {
                     <div class="main-container-informacoes">
                         <div class="main-container-autoEhCategoria">
                             <h3 class="autor">${mensagem.autor}</h3>
-                            <p class="data">01/07/25</p>
+                            <p class="data">${formatarDataISO(mensagem.createdAt)}</p>
                             <p class="categoria">${mensagem.categoria}</p>
                         </div>
 

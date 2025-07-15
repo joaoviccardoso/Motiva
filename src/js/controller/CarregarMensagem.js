@@ -118,7 +118,4 @@ class CarregarMensagem{
 
 }
     
-    
-
-
 export default CarregarMensagem
