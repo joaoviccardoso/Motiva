@@ -59,15 +59,37 @@
   <main class="main">
     <section class="main-container">
       <section class="main-container-pesquisa">
-        <div class="main-pesquisa">  
-          <input type="search" class="main-input-pesquisa" id="barraDePesquisa" placeholder="Pesquise por autor ou categoria.">
-          <button class="main-btn-pesquisa" id="btnPesquisar">Procurar</button>
+
+        <div class="main-faixa-filtro">
+          <div class="main-pesquisa">  
+            <input type="search" class="main-input-pesquisa" id="barraDePesquisa" placeholder="Pesquise por autor ou categoria.">
+            <button class="main-btn-pesquisa" id="btnPesquisar">Procurar</button>
+          </div>
+
+
+          <select name="" id="Select-ordernar" class="select-filtrarOrdernar">
+            <option value="" disabled selected hidden>Ordernar</option>
+            <option value="recentes">Mais recentes</option>
+            <option value="maisCurtidas">Mais curtidas</option>
+          </select>
+
+          <select name="" id="Select-filtrar" class="select-filtrarOrdernar">
+            <option value="" disabled selected hidden>Filtrar</option>
+            <option value="motivacao">Motivação</option>
+            <option value="humor">Humor</option>
+            <option value="história">História</option>
+            <option value="filosofia">Filosofia/Pensamentos</option>
+            <option value="romance">Romance/Relacionamentos</option>
+            <option value="misterio">Mistério</option>
+            <option value="aleatorias">Aleatórias</option>
+          </select>
         </div>
 
         <div class="main-container-novaMensagem">
           <h3 class="main-novaMensagem">Compartilhe sua mensagem e inspire alguém hoje mesmo!</h3>
           <button class="main-btn-novaMensagem" id="novaMensagem">+ Nova Mensagem</button>
         </div>
+     
       </section>
 
       <section class="main-container-mensagens" id="">
