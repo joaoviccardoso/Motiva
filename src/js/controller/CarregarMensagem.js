@@ -14,11 +14,15 @@ class CarregarMensagem{
         this.form = new Form();
     }
 
-    async CarregarTodasAsMensagens(){
+    async pegarTodasAsMensagens(){
+        const mensagens = await apiMetodosHttp.getapi()
+        this.CarregarTodasAsMensagens(mensagens)
+    }
+
+    async CarregarTodasAsMensagens(mensagens){
         this.loader.style.display = "block"
         this.containerMensagens.style.display = "none"
 
-        const mensagens = await apiMetodosHttp.getapi()
         if(!mensagens === ""){
             this.containerMensagens.innerHTML += "<h3>Nem uma Criada.</h3>"
             return

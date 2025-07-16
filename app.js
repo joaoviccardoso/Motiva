@@ -13,12 +13,13 @@ if (temaSalvo) {
   paleta.mudarCorTema(temaSalvo);
 }
 
-GerarMensagens.CarregarTodasAsMensagens()
+GerarMensagens.pegarTodasAsMensagens()
 BtnControlle.garregarPaletaCor()
 BtnControlle.carregarForm()
 BtnControlle.carregarSobre()
 BtnControlle.carregarFormBanner()
 filtro.filtrarPorBarraDePesquisa()
+filtro.filtrarPelosBtn()
 
 
 
