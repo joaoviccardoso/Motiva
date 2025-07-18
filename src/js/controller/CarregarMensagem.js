@@ -37,6 +37,7 @@ class CarregarMensagem{
         const btnsLixeira = document.querySelectorAll('.lixeira');
         const btnsEditar = document.querySelectorAll('.editar');
         const btnsLike = document.querySelectorAll(".btn-likes");
+        
         this.pegarIdDosbtnsEhDeletar(btnsLixeira);
         this.pegarIdDosbtnsEhEditar(btnsEditar);
         this.curtirMensagem(btnsLike);

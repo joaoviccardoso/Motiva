@@ -47,6 +47,7 @@ class Form{
         console.log(mensagemParaEditar)
         document.querySelector("#autor").value = mensagemParaEditar.autor;
         document.querySelector("#input-mensagem").value = mensagemParaEditar.mensagem;
+        document.querySelector("#categoria").value = mensagemParaEditar.categoria;
         this.pegarValores(idBtn)
     }
 

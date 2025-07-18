@@ -16,11 +16,16 @@
         border-radius: 0;
     }
 
+    .main-input-pesquisa:focus{
+        border: var(--cor-btn) 1px solid;
+        border-radius: 40px 0 0 40px;
+    }
+
     .main-btn-pesquisa {
         background-color: var(--cor-btn);
         border: none;
-        padding: 15px 30px;
-        font-size: 16px;
+        padding: 15px 80px 10px 5px;
+        font-size: 10px;
         font-family: var(--font-size-desktop-texto);
         color: white;
         cursor: pointer;
@@ -34,7 +39,12 @@
     }
 }    
 
-@media (min-width: 950px) and (max-width: 1300px) {
+@media (min-width: 950px) and (max-width: 3500px) {
+    .main-btn-pesquisa {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
     .main-pesquisa {
         max-width: 640px;
     }

@@ -1,5 +1,6 @@
 .main-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -22,7 +23,9 @@
 }
 
 .main-container-pesquisa{
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-nav-titulo{
