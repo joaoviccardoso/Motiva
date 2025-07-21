@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Motiva</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="./src/css/import.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,69 +12,65 @@
 </head>
 <body class="body">
   <header class="header">
-    <section class="header-container-texto">
+    <div class="header-container-texto">
       <h1 class="header-titulo">Expressa</h1>
-      <p class="header-texto">No Expressa, você pode compartilhar frases que inspiram, divertem, arrepiam ou fazem pensar. Escolha entre diferentes categorias como motivação, humor, terror, história e muito mais — cada post é uma forma única de expressar o que você sente ou quer dizer ao mundo.</p>
-    </section>
+      <p class="header-texto">
+        No Expressa, você pode compartilhar frases que inspiram, divertem, arrepiam ou fazem pensar. Escolha entre diferentes categorias como motivação, humor, terror, história e muito mais — cada post é uma forma única de expressar o que você sente ou quer dizer ao mundo.
+      </p>
+    </div>
     
-    <nav class="header-nav">
+    <nav class="header-nav" aria-label="Menu principal">
       <h2 class="header-nav-titulo">Menu</h2>
-
       <ul class="header-nav-ul">
-
         <li class="header-nav-li">
-          <a href="https://motiva-chi.vercel.app/" style="text-decoration: none;">
+          <a href="https://motiva-chi.vercel.app/" style="text-decoration: none;" aria-label="Ir para a página inicial">
             <button class="header-nav-btn">
-              <img src="./src/img/house 1.png" alt="icone de inicio" class="header-nav-img">
-              <h3 class="header-nav-descricaoBtn">Inicio</h3>
+              <img src="./src/img/house 1.png" alt="Ícone de Início" class="header-nav-img">
+              <span class="header-nav-descricaoBtn">Início</span>
             </button>
           </a>  
         </li>
 
         <li class="header-nav-li">
-          <button class="header-nav-btn" id="btn-open-form">
-            <img src="./src/img/note 1.png" alt="icone Cadastrar mensagem" class="header-nav-img">
-            <h3 class="header-nav-descricaoBtn">Cadastrar</h3>
+          <button class="header-nav-btn" id="btn-open-form" aria-label="Cadastrar nova mensagem">
+            <img src="./src/img/note 1.png" alt="Ícone para cadastrar mensagem" class="header-nav-img">
+            <span class="header-nav-descricaoBtn">Cadastrar</span>
           </button>
         </li>
 
         <li class="header-nav-li">
-          <button type="button" class="header-nav-btn" id="btn-open-paletaDeCor">
-            <img src="./src/img/eyedropper 1.png" alt="Tema" class="header-nav-img">
-            <h3 class="header-nav-descricaoBtn">Tema</h3>
+          <button type="button" class="header-nav-btn" id="btn-open-paletaDeCor" aria-label="Alterar tema">
+            <img src="./src/img/eyedropper 1.png" alt="Ícone de tema" class="header-nav-img">
+            <span class="header-nav-descricaoBtn">Tema</span>
           </button>
         </li>
 
         <li class="header-nav-li">
-          <button class="header-nav-btn" id="btn-open-sobre">
-            <img class="img-sobre" src="./src/img/Vector.png" alt="Sobre o projeto" >
-            <h3 class="header-nav-descricaoBtn">Sobre</h3>
+          <button class="header-nav-btn" id="btn-open-sobre" aria-label="Sobre o projeto">
+            <img class="img-sobre" src="./src/img/Vector.png" alt="Ícone sobre o projeto">
+            <span class="header-nav-descricaoBtn">Sobre</span>
           </button>
         </li>
-
       </ul>
-
     </nav>
   </header>
 
-  <main class="main">
-    <section class="main-container">
-      <section class="main-container-pesquisa">
-
+  <main class="main" role="main">
+    <section class="main-container" aria-label="Conteúdo principal">
+      <section class="main-container-pesquisa" aria-label="Seção de pesquisa e filtros">
         <div class="main-faixa-filtro">
           <div class="main-pesquisa">  
             <input type="search" class="main-input-pesquisa" id="barraDePesquisa" placeholder="Pesquise por autor ou categoria.">
             <button class="main-btn-pesquisa" id="btnPesquisar">Procurar</button>
           </div>
 
-
-          <select name="" id="select-ordernar" class="select-filtrarOrdernar">
-            <option value="" disabled selected hidden>Ordernar</option>
+          <select id="select-ordernar" class="select-filtrarOrdernar">
+            <option value="" disabled selected hidden>Ordenar</option>
             <option value="recentes">Mais recentes</option>
             <option value="maisCurtidas">Mais curtidas</option>
           </select>
 
-          <select name="" id="select-filtrar" class="select-filtrarOrdernar">
+          <select id="select-filtrar" class="select-filtrarOrdernar">
             <option value="" disabled selected hidden>Filtrar</option>
             <option value="motivacao">Motivação</option>
             <option value="humor">Humor</option>
@@ -86,25 +83,22 @@
         </div>
 
         <div class="main-container-novaMensagem">
-          <h3 class="main-novaMensagem">Compartilhe sua mensagem e inspire, divirta ou surpreenda alguém hoje mesmo!</h3>
+          <h2 class="main-novaMensagem">Compartilhe sua mensagem e inspire, divirta ou surpreenda alguém hoje mesmo!</h2>
           <button class="main-btn-novaMensagem" id="novaMensagem">+ Nova Mensagem</button>
         </div>
-     
       </section>
 
-      <section class="main-container-mensagens" id="">
-      <!--Mensagem vai ser colocada aqui-->
-      <div id="loader" class="loader"></div>
-      <div id="container-mensagens" class="main-container-mensagens" style="display: none;"></div>
-
+      <section class="main-container-mensagens" aria-label="Mensagens compartilhadas">
+        <div id="loader" class="loader" aria-hidden="true"></div>
+        <div id="container-mensagens" class="main-container-mensagens" style="display: none;"></div>
       </section>
     </section>
   </main>
 
-  <dialog id="myDialog">
-       
+  <dialog id="myDialog" aria-label="Diálogo de interação">
+    <!-- conteúdo do diálogo -->
   </dialog>
+
   <script type="module" src="app.js"></script>
 </body>
 </html>
-

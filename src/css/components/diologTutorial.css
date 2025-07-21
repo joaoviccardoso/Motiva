@@ -1,0 +1,30 @@
+.container-tutorial-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.circulo-tutorial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: solid var(--cor-nav) 2px;
+    background-color: var(--cor-nav);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.btn-ignorar{
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: var(--cor-nav);
+    color: var(--branco);
+    font-family: var(--font-principal);
+    border: none;
+
+}
