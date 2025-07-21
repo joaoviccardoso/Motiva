@@ -83,12 +83,13 @@ class CarregarMensagem{
         btns.forEach(btn => {
             btn.addEventListener('click', async () => {
                 const id = btn.id.split("-")[1];
-                console.log(id)
-                let likedPosts = JSON.parse(localStorage.getItem("likedPosts") || "[]");
+                btn.disabled = true;
 
+                let likedPosts = JSON.parse(localStorage.getItem("likedPosts") || "[]");
                 const jaCurtiu = likedPosts.includes(id);
-                console.log(jaCurtiu)
+                
                 try{
+                    this.atualizarBtnLike(jaCurtiu, id)
                     const resposta = await apiMetodosHttp.atualizarLikes(id, {liked: !jaCurtiu});
 
                     if (jaCurtiu) {
@@ -99,9 +100,10 @@ class CarregarMensagem{
                     localStorage.setItem("likedPosts", JSON.stringify(likedPosts));
                     const contador = btn.nextElementSibling; // <p class="contadorDeLike">
                     contador.textContent = resposta.likes;
-                    this.atualizarBtnLike(jaCurtiu, id)
                 } catch{
                     modal.mostrarDialogCerto("d9534f", "Ops...", "Houve um erro para Curtir sua mensagem")
+                } finally{
+                    btn.disabled = false;
                 }
             })
         })
