@@ -34,6 +34,7 @@ export class FormView{
                             <option class="texto-option" value="filosofia">Filosofia/Pensamentos</option>
                             <option class="texto-option" value="romance">Romance/Relacionamentos</option>
                             <option class="texto-option" value="misterio">Mistério</option>
+                            <option class="texto-option" value="shitpost">Shitpost</option>
                             <option class="texto-option" value="aleatorias">Aleatórias</option>
                     </select>
                     
