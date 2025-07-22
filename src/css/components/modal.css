@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     font-family: var(--font-titulo);
+    margin: 5rem 1.5rem;
     max-width: 800px;
     box-shadow: 
     0 2px 4px rgba(255, 255, 255, 0.1), 

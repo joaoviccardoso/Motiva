@@ -10,15 +10,14 @@ export class SobreView{
         sectionSobre.classList.add("container-sobre", "form-animation-enter");
         sectionSobre.innerHTML = `
             <div class="container-sobre-titulo">
-                <h4>Por que criamos o site Motiva?</h4>
+                <h4>Por que criamos o site Expressa?</h4>
             </div> 
             <div class="container-sobre-texto">
-                <p>O site Motiva nasceu com um propósito simples, mas poderoso: inspirar e motivar pessoas no seu dia a dia. Em meio à correria da rotina, é comum nos sentirmos desanimados ou sobrecarregados, e muitas vezes, uma simples mensagem positiva pode fazer toda a diferença.</p>
+                <p>O Expressa nasceu da vontade de criar um espaço onde qualquer pessoa pudesse soltar a criatividade, expressar seus sentimentos ou simplesmente compartilhar uma boa frase — seja ela engraçada, inspiradora, curiosa ou até mesmo provocativa.</p>
 
-                <p>Pensando nisso, decidimos criar uma plataforma leve, acessível e acolhedora, onde qualquer pessoa possa encontrar palavras de incentivo, frases motivacionais e mensagens que tragam mais força e clareza para enfrentar os desafios da vida pessoal, acadêmica ou profissional.</p>
+                <p>Vivemos em tempos acelerados, onde às vezes falta um lugar para desabafar, rir ou refletir. Pensando nisso, criamos uma plataforma leve e acessível, onde o conteúdo é feito por pessoas reais, com ideias autênticas e muita personalidade.</p>
 
-                <p>Nosso objetivo com o Motiva é oferecer um espaço seguro, que valoriza o bem-estar emocional e incentiva a autoconfiança, a persistência e a positividade. Seja para começar o dia com mais energia ou para recarregar as forças em momentos difíceis, o Motiva está aqui para lembrar que você é capaz.</p>
-                
+                <p>No Expressa, você tem liberdade para ser você. Aqui, cada mensagem conta e pode tocar alguém do outro lado da tela. Seja para arrancar risos, levantar o astral ou provocar aquele pensamento, o Expressa é um palco aberto para sua voz.</p>
             </div>
         `
 
