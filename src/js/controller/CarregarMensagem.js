@@ -28,9 +28,12 @@ class CarregarMensagem{
             return
         }
 
+        let arrayMensagena = '';
         mensagens.forEach(mensagem => {
-            this.containerMensagens.innerHTML += gerarMensagem.mensagemCriada(mensagem)
+            arrayMensagena += gerarMensagem.mensagemCriada(mensagem)
         });
+
+        this.containerMensagens.innerHTML += arrayMensagena;
 
         this.containerMensagens.style.display = "flex"
         this.loader.style.display = "none"

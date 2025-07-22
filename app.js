@@ -4,6 +4,17 @@ import { PaletaView } from "./src/js/view/paletaView.js";
 import Filtros from "./src/js/controller/filtroController.js";
 import { modal } from "./src/js/view/modal.js";
 
+async function wakeUpAPI() {
+  try {
+    await fetch("https://sua-api.onrender.com/ping"); // substitua pela URL real
+    console.log("API acordada com sucesso!");
+  } catch (err) {
+    console.warn("Erro ao acordar API:", err);
+  }
+}
+
+
+await wakeUpAPI()
 const BtnControlle = new BtnController()
 const GerarMensagens = new CarregarMensagem()
 const paleta = new PaletaView()
