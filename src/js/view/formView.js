@@ -23,7 +23,7 @@ export class FormView{
                     <textarea class="main-input-form" id="input-mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem aqui..." required></textarea>
 
                     <label for="" class="main-label-form">Senha para Editar</label>
-                    <input type="text" class="main-input-form" id="senha" required>
+                    <input type="password" class="main-input-form" id="senha" required>
 
                     <label class="main-label-form">Categoria</label>
                     <select class="main-input-form" id="categoria">
