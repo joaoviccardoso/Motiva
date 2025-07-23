@@ -6,7 +6,7 @@ import { modal } from "./src/js/view/modal.js";
 
 async function wakeUpAPI() {
   try {
-    await fetch("https://sua-api.onrender.com/ping"); // substitua pela URL real
+    await fetch("https://todo-listback.onrender.com/mensagem");
     console.log("API acordada com sucesso!");
   } catch (err) {
     console.warn("Erro ao acordar API:", err);

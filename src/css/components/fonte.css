@@ -8,6 +8,7 @@
     font-size:  var(--font-size-mobile-texto);
     font-family: var(--font-principal);
     text-align: center;
+    width: 80%;
     color: var(--cor-nav);
 }
 /*Celulares pequenos*/

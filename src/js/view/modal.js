@@ -46,7 +46,7 @@ export const modal = {
 
                 <div class="container-tutorial-btn">
                     <span class="circulo-tutorial">
-                        <img class="img-tutorial" src="./src/img/Vector.png" alt="Ícone sobre o projeto">
+                        <img class="img-tutorial-2" src="./src/img/Vector.png" alt="Ícone sobre o projeto">
                     </span>
                     <p>Sobre: Veja mais informações sobre o projeto e a proposta do Motiva.</p>
                 </div>

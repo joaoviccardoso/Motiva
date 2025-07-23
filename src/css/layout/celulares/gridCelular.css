@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 30vh 70vh;
+    grid-template-rows: 33vh 68vh;
     grid-template-areas:
     "header"
     "main"

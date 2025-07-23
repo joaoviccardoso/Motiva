@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 .circulo-tutorial{
@@ -13,9 +13,19 @@
     border: solid var(--cor-nav) 2px;
     background-color: var(--cor-nav);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    padding: 0 .6rem;
     margin-right: 1rem;
+}
+
+.img-tutorial{
+    width: 30px;
+    height: 30px;
+}
+
+.img-tutorial-2{
+    margin: .8rem;
 }
 
 .btn-ignorar{

@@ -1,15 +1,15 @@
-.main-pesquisa {
+    .main-pesquisa {
         display: flex;
-        width: 100%;
-        max-width: 1000px;
+        width: 80%;
+        max-width: 80%;
         border-radius: 40px;
         overflow: hidden;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
     .main-input-pesquisa {
-        flex: 1;
-        padding: 15px 20px;
+        width: 120px;
+        padding: 15px 15px;
         border: none;
         outline: none;
         font-size: 16px;
@@ -24,7 +24,7 @@
     .main-btn-pesquisa {
         background-color: var(--cor-btn);
         border: none;
-        padding: 15px 80px 10px 5px;
+        padding: 1rem 7rem 1rem 1rem;
         font-size: 10px;
         font-family: var(--font-size-desktop-texto);
         color: white;
@@ -35,8 +35,14 @@
 
 @media (min-width: 800px) and (max-width: 949px) {
     .main-pesquisa {
-        max-width: 550px;
+        max-width: 80%;
+        display: flex;
+        flex-direction: row;
     }
+
+     .main-input-pesquisa {
+        flex: 1;
+     }
 }    
 
 @media (min-width: 950px) and (max-width: 3500px) {
@@ -48,4 +54,8 @@
     .main-pesquisa {
         max-width: 640px;
     }
+
+    .main-input-pesquisa {
+        flex: 1;
+     }
 }
