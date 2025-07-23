@@ -36,6 +36,12 @@
     .header-container-texto{
         padding: 1rem;
     }
+
+    .header-nav{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 /*Celulares Tela grande*/
@@ -43,7 +49,7 @@
     .header-nav{
         display: flex;
         align-items: center;
-        height: 45px;
+        height: 100%;
     }
 }
 
@@ -62,7 +68,7 @@
 
     .header-nav{
         height: 100%;
-    }
+    } 
 
     /*Container Nav*/
     .header-nav-ul{

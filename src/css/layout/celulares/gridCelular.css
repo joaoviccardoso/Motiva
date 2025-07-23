@@ -19,6 +19,16 @@ main{
     background: var(--cor-fundo);
 }
 
+@media (min-width: 381px) and (max-width: 440px){
+    body{
+    grid-template-rows: 28vh 68vh;
+    grid-template-areas:
+    "header"
+    "main"
+    ;
+}
+}
+
 @media (min-width: 800px) and (max-width: 1300px) {
     body{
         grid-template-columns: 30% 70%;
