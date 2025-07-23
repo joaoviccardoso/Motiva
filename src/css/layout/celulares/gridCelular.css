@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 33vh 68vh;
+    grid-template-rows: 34vh 68vh;
     grid-template-areas:
     "header"
     "main"
@@ -19,7 +19,15 @@ main{
     background: var(--cor-fundo);
 }
 
-
+@media (min-width: 400px) and (max-width: 440px){
+    body{
+    grid-template-rows: 29vh 68vh;
+    grid-template-areas:
+    "header"
+    "main"
+    ;
+}
+}
 
 @media (min-width: 800px) and (max-width: 1300px) {
     body{
